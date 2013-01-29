@@ -3,9 +3,9 @@
 #    echo "i ran at #{Time.now}" >> /root/cheftime
 #  }
 #end
-
+require_recipe "newrelic_server_monitoring"
 # uncomment to turn on thinking sphinx/ultra sphinx. Remember to edit cookbooks/sphinx/recipes/default.rb first!
-# require_recipe "sphinx"
+require_recipe "sphinx"
 
 #uncomment to turn on memcached
 # require_recipe "memcached"
